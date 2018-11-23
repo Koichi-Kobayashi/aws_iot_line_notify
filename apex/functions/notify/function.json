@@ -1,0 +1,15 @@
+{
+  "description": "LINE Notifyで通知する",
+  "runtime": "python3.7",
+  "Handler": "line_notify.lambda_handler",
+  "memory": 128,
+  "timeout": 300,
+  "role": "arn:aws:iam::123456789012:role/lambda-execution-role",
+  "environment": {
+    "PYTHONPATH": "/var/runtime:/var/task/vendor",
+    "token": "ABCDEFG",
+    "clickType_single": "シングル",
+    "clickType_double": "ダブル",
+    "clickType_long": "ロング"
+  }
+}
