@@ -16,6 +16,7 @@ apexを使っているので、apexディレクトリの下で以下のコマン
 apex deploy
 ```
 
-デプロイすると、iot_line_notifyというLambda関数が作成される。
-apexを使いたくない場合は、notifyディレクトリ以下をzipで固めて直接Lambdaにアップロードする。
+デプロイすると、iot_line_notifyというLambda関数が作成される。  
+apexを使いたくない場合は、notifyディレクトリ以下をzipで固めて直接Lambdaにアップロードする。  
+Lambdaの設定内容はfunction.jsonを参照。  
 
