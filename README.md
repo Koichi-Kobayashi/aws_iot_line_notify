@@ -9,3 +9,13 @@ apex/functions/notify/function.json
 2. "token": "ABCDEFG",  
 →「"ABCDEFG"」：LINE Notifyで取得したtokenに変更。
 
+# Lambda関数のデプロイ方法
+apexを使っているので、apexディレクトリの下で以下のコマンドを実行。  
+
+```
+apex deploy
+```
+
+デプロイすると、iot_line_notifyというLambda関数が作成される。
+apexを使いたくない場合は、notifyディレクトリ以下をzipで固めて直接Lambdaにアップロードする。
+
