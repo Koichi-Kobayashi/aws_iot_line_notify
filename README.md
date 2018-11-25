@@ -8,6 +8,10 @@ apex/functions/notify/function.json
 →「lambda-execution-role」：お好きなロールに変更。とりあえずCloudWatch Logsに読み書き可能であればOK  
 2. "token": "ABCDEFG",  
 →「"ABCDEFG"」：LINE Notifyで取得したtokenに変更。
+3. 通知内容の編集  
+"clickType_single": シングルクリック時に通知する内容  
+"clickType_double": ダブルクリック時に通知する内容  
+"clickType_long": ロングクリック時に通知する内容  
 
 # Lambda関数のデプロイ方法
 apexを使っているので、apexディレクトリの下で以下のコマンドを実行。  
