@@ -24,3 +24,35 @@ apex deploy
 apexを使いたくない場合は、notifyディレクトリ以下をzipで固めて直接Lambdaにアップロードする。  
 Lambdaの設定内容はfunction.jsonを参照。  
 
+# Lambdaのテストパラメータ
+```
+{
+  "deviceInfo": {
+    "deviceId": "G030PMXXXXXXXXXX",
+    "type": "button",
+    "remainingLife": 99.3,
+    "attributes": {
+      "projectRegion": "ap-northeast-1",
+      "projectName": "sample-project",
+      "placementName": "Sample-Placement",
+      "deviceTemplateName": "SampleRequest"
+    }
+  },
+  "deviceEvent": {
+    "buttonClicked": {
+      "clickType": "SINGLE",
+      "reportedTime": "2018-10-28T16:16:08.000Z"
+    }
+  },
+  "placementInfo": {
+    "projectName": "Sample-Project",
+    "placementName": "Sample-Placement",
+    "attributes": {
+      "key": "value"
+    },
+    "devices": {
+      "Sample-Request": "G030PMXXXXXXXXXX"
+    }
+  }
+}
+```
